@@ -1,3 +1,5 @@
+import Island from './Island.js'; // Import the Island class
+
 export default class World {
     constructor() {
       this.islands = []; // a good place to keep track of your islands
@@ -64,6 +66,11 @@ export default class World {
       // set the coordiantes as a transform property
          islandElement.style.transform = `translate(${coordinates.x}px, ${coordinates.y}px)`;
 
+      const island = new Island();
+      islandElement.style.backgroundColor = island.getRandomColor();
+
+      // give the new island a random name
+      islandElement.innerHTML = island.getRandomName();
 
       console.log("test2");
 

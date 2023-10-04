@@ -28,8 +28,8 @@ export default class Island {
       ];
   
       // // return a random name from the array
-      // const randomIndex = Math.floor(Math.random() * names.length); // Generate a random index within the range of the 'names' array
-      // return names[randomIndex]; // Return the name at the randomly generated index
+      const randomIndex = Math.floor(Math.random() * names.length); // Generate a random index within the range of the 'names' array
+      return names[randomIndex]; // Return the name at the randomly generated index
 
     }
   }
